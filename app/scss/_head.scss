@@ -1,0 +1,42 @@
+
+.left{
+  li{
+    position: relative;
+    width: 100px;
+
+    &:before{
+      content: "";
+      position: absolute;
+      width: 50px;
+      height: 50px;
+      background-color: #37418b;
+      right: -100px;
+    }
+    &:first-child:before{
+      background-color: #2EBE21;
+    }
+    a{
+      p{
+        span{
+          display: block;
+          position: relative;
+          &:hover{
+            color: red;
+          }
+
+        }
+      }
+    }
+  }
+}
+.right{
+  li{
+    a{
+      p{
+        span{
+color: #FF0000;
+        }
+      }
+    }
+  }
+}
