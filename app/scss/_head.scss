@@ -1,42 +1,347 @@
+body {
+  background-color: #f2f2f2;
+  font-family: "Lato";
+  font-weight: 300;
+  font-size: 16px;
+  color: #555;
 
-.left{
-  li{
-    position: relative;
-    width: 100px;
+  -webkit-font-smoothing: antialiased;
+  -webkit-overflow-scrolling: touch;
 
-    &:before{
-      content: "";
-      position: absolute;
-      width: 50px;
-      height: 50px;
-      background-color: #37418b;
-      right: -100px;
+  margin-top: 70px;
+}
+
+/* Titles */
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Raleway";
+  font-weight: 300;
+  color: #333;
+}
+
+/* Paragraph & Typographic */
+p {
+  line-height: 28px;
+  margin-bottom: 25px;
+}
+
+.centered {
+  text-align: center;
+}
+
+/* Links */
+a {
+  color: #f85c37;
+  word-wrap: break-word;
+  transition: color 0.1s ease-in, background 0.1s ease-in;
+}
+
+a:hover,
+a:focus {
+  color: #7b7b7b;
+  text-decoration: none;
+  outline: 0;
+}
+
+a:before,
+a:after {
+
+  transition: color 0.1s ease-in, background 0.1s ease-in;
+}
+
+hr {
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid #ccc;
+  margin: 1em 0;
+  padding: 0;
+}
+
+.fa {
+  color: #ff7878;
+}
+
+.navbar {
+  font-weight: 800;
+  font-size: 14px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+
+.navbar-inverse {
+  background: #2d2d2d;
+  border-color: #2d2d2d;
+}
+
+.navbar-inverse .navbar-nav > .active > a {
+  background: #ff7878;
+}
+
+.navbar-inverse .navbar-brand {
+  color: #999999;
+  font-weight: bolder;
+  font-size: 22px;
+  letter-spacing: 1px;
+}
+
+/*TILT*/
+.header {
+  background: url(../img/header-bg.jpg) no-repeat center top;
+  margin-bottom: 10px;
+  padding-top: 30px;
+  text-align: center;
+  min-height: 500px;
+  width: 100%;
+  background-size: cover;
+  &-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 450px;
+    h1, h2 {
+      color: #FFFFFF;
     }
-    &:first-child:before{
-      background-color: #2EBE21;
-    }
-    a{
-      p{
-        span{
-          display: block;
-          position: relative;
-          &:hover{
-            color: red;
-          }
 
-        }
-      }
+  }
+}
+
+.block {
+  &-box {
+    margin-top: 100px;
+    margin-bottom: 50px;
+
+  }
+}
+
+.fa-heart, .fa-laptop, .fa-trophy {
+  font-size: 30px;
+}
+
+.mobile {
+  background: #e0e0e0;
+
+  h1 {
+    margin-bottom: 50px;
+    margin-top: 50px;
+  }
+
+  &-left {
+    transition: all 0.5s;
+    &:hover {
+      transform: rotate(-10deg);
+    }
+  }
+  &-center {
+    transition: all 0.5s;
+    &:hover {
+      transform: translateY(-40px);
+    }
+  }
+  &-right {
+    transition: all 0.5s;
+    &:hover {
+
+      transform: rotate(10deg);
     }
   }
 }
-.right{
-  li{
-    a{
-      p{
-        span{
-color: #FF0000;
-        }
-      }
+
+.create {
+
+  margin-top: 100px;
+  h4 {
+    color: black;
+    font-weight: 800;
+    font-size: 30px;
+  }
+  p {
+    margin-bottom: 100px;
+  }
+  img {
+
+    transition: all 0.5s;
+    &:hover {
+
+      transform: translateY(240px);
     }
   }
+}
+
+.partners {
+  position: relative;
+  z-index: 99;
+  padding-top: 30px;
+  background: #ebebeb;
+  h1 {
+
+    color: black;
+    font-weight: 600;
+    font-size: 30px;
+  }
+}
+
+.footer {
+  background: #ff7878;
+  &-chant {
+    h4 {
+      margin-top: 30px;
+      color: white;
+      font-weight: 700;
+      font-size: 18px;
+    }
+    p {
+      color: white;
+      font-size: 20px;
+      padding-bottom: 20px;
+    }
+  }
+  &-networks {
+    background: #2d2d2d;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    font-size: 30px;
+    i {
+      color: #bdbdbd;
+      font-size: 30px;
+      padding: 20px;
+    }
+    i:hover {
+      color: #ff7878;
+    }
+  }
+
+}
+
+/////////////////////ABOUT/////////////////////////////////////////////////////////
+/////////////////////ABOUT/////////////////////////////////////////////////////////
+/////////////////////ABOUT/////////////////////////////////////////////////////////
+/////////////////////ABOUT/////////////////////////////////////////////////////////
+/////////////////////ABOUT/////////////////////////////////////////////////////////
+/////////////////////ABOUT/////////////////////////////////////////////////////////
+
+.about {
+  &-more {
+    color: #FFFFFF;
+    background: #3498db;
+    padding: 50px;
+  }
+  h1 {
+    color: #FFFFFF;
+  }
+
+  &-people {
+    padding: 50px;
+  }
+  &-skills {
+    background: #e0e0e0;
+    padding: 45px;
+    h4 {
+      margin-bottom: 45px;
+    }
+  }
+}
+
+//////////////////////servive//////////////////////////////////////////////////
+//////////////////////servive//////////////////////////////////////////////////
+//////////////////////servive//////////////////////////////////////////////////
+//////////////////////servive//////////////////////////////////////////////////
+//////////////////////servive////////////////////////////////////////////////////////
+//////////////////////servive//////////
+.services {
+  &-edge {
+    padding: 40px;
+    i {
+      font-size: 30px;
+    }
+  }
+  &-pricing {
+    h5 {
+      margin: 90px 0 40px 0;
+      color: black;
+      font-size: 28px;
+      font-weight: 700;
+    }
+    background-color: #e0e0e0;
+    &_top {
+
+      background: black;
+      color: #FFFFFF;
+      h3 {
+        padding-top: 45px;
+        font-size: 28px;
+        font-weight: 600;
+      }
+      h2 {
+
+        color: #FFFFFF;
+        margin-bottom: 0;
+        font-size: 128px;
+        padding-bottom: 30px;
+      }
+      sup, sub {
+        font-size: 25px;
+      }
+      sup {
+        top: -2.5em;
+      }
+
+    }
+    &_all {
+
+      border-bottom: solid 1px #e1e1e1;
+      background: #FFFFFF;
+    }
+    h3 {
+      color: #FFFFFF;
+    }
+    p {
+      padding-top: 30px;
+    }
+  }
+}
+
+.butt {
+  margin-bottom: 200px;
+  display: block;
+  text-align: center;
+  font-size: 18px;
+  font-weight: bold;
+  padding: 15px 10px;
+  color: white;
+  background: #1abc9c;
+  &:hover {
+    background: #ff7878;
+    color: white;
+  }
+}
+
+
+
+//////////////////////works//////////////////////////////////////////////////
+//////////////////////works//////////////////////////////////////////////////
+//////////////////////works//////////////////////////////////////////////////
+//////////////////////works//////////////////////////////////////////////////
+//////////////////////works////////////////////////////////////////////////////////
+//////////////////////works//////////
+
+.bot {
+  margin-bottom: 80px;
+
+}
+.works {
+  margin-top: 100px;
+
+  &-block {
+
+h4 {
+  font-weight: 800;
+}
+    i {
+      padding: 10px;
+    }
+  }
+}
+.line {
+  border-bottom: solid 2px #e1e1e1;
+  margin-bottom: 70px;
 }
